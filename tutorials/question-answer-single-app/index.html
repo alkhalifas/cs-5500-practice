@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Q&A Site</title>
+</head>
+<body>
+<header>
+  <h1>Q&A Site</h1>
+</header>
+<main>
+  <div id="question-list">
+    <!-- Questions will be displayed here -->
+  </div>
+  <div id="question-details">
+    <!-- Question details and answers will be displayed here -->
+  </div>
+  <div id="add-question-form">
+    <h2>Add a New Question</h2>
+    <input type="text" id="question-title" placeholder="Question Title">
+    <textarea id="question-text" placeholder="Question Text"></textarea>
+    <input type="text" id="question-author" placeholder="Your Name">
+    <button onclick="addQuestion()">Submit</button>
+  </div>
+  <div id="add-answer-form">
+    <h2>Add an Answer</h2>
+    <input type="text" id="answer-title" placeholder="Answer Title">
+    <textarea id="answer-text" placeholder="Answer Text"></textarea>
+    <input type="text" id="answer-author" placeholder="Your Name">
+    <button onclick="addAnswer()">Submit</button>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

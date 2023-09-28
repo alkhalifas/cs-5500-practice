@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <title>Title</title>
+    </head>
+    <body class="container">
+    <div>
+        <h2>What Can JavaScript Do?</h2>
+        <p id="demo">JavaScript can hide HTML elements.</p>
+        <button
+                type="button"
+                onclick="document.getElementById('demo').style.display='none'">
+            Hide
+        </button>
+        <button
+                type="button"
+                onclick="document.getElementById('demo').style.display='block'">
+            Show
+        </button>
+    </div>
+    <div>
+        <h2>What Can JavaScript Do?</h2>
+        <p id="write">Write to HTML.</p>
+        <button
+                type="button"
+                onclick="document.getElementById('write').innerHTML = 'innerHTML'">
+            innerHTML
+        </button>
+        <button
+                type="button"
+                onclick="document.write('<h1>Main title</h1>')">
+            Main title
+        </button>
+        <button
+                type="button"
+                onclick="window.alert('THIS IS AN ALERT')">
+            Alert
+        </button>
+        <button
+                type="button"
+                onclick="window.print('THIS IS A PRINTED ITEM')">
+            Print
+        </button>
+    </div>
+    <div>
+        <h2>Accessing Objects</h2>
+        <p id="object">Who is the person?</p>
+        <button
+                type="button"
+                onclick="document.getElementById('object').innerHTML = person.fullName()">
+            Print
+        </button>
+    </div>
+    <div>
+        <h2>Function in a Function</h2>
+        <p id="math">Who is the person?</p>
+        <input type="text" id="num1" placeholder="Num 1">
+        <input type="text" id="num2" placeholder="Num 2">
+        <button
+                type="button"
+                onclick="document.getElementById('object').innerHTML = person.fullName()">
+            Print
+        </button>
+    </div>
+
+    </body>
+</html>
